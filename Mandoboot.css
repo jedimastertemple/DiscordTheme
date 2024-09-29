@@ -1,0 +1,41 @@
+/*Imports*/
+
+@import url("https://slddev.github.io/SpotiCord/src/main.css");
+@import url("https://slddev.github.io/SpotiCord/src/fixes.css");
+
+/*Version System*/
+:root {
+    --theme-version: "";
+}
+
+[id^="SpotiCord"] .bd-addon-header .bd-version:before {
+    content: "v" var(--theme-version);
+}
+
+.info_c5a741:after {
+    content: "SpotiCord - " var(--theme-version);
+    top: 16px;
+    color: var(--text-muted);
+    position: relative;
+}
+
+[id^="SpotiCord"] .bd-addon-header .bd-version {
+    font-size: 0;
+}
+
+[id^="SpotiCord"] .bd-addon-header .bd-version:before {
+    font-size: 14px;
+}
+
+.bd-switch input:checked + .bd-switch-body {
+    --switch-color: var(--background-accent);
+}
+
+.wordmarkWindows_a934d8:after {
+    content: "SpotiCord " var(--theme-version) " THERE IS ONLY ONE WAY. THE WAY OF THE MANDALORE.";
+    color: var(--text-muted);
+    font-size: 12px;
+    padding-left: 10px;
+    position: relative;
+    bottom: 4px;
+}
